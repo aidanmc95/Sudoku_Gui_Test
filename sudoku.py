@@ -68,6 +68,8 @@ class SudokuUI(Frame):
         """
         Draws grid divided with blue lines into 3x3 squares
         """
+        self.canvas.create_line(MARGIN, MARGIN, HEIGHT - MARGIN, HEIGHT - MARGIN, fill='gray')
+        self.canvas.create_line(MARGIN, HEIGHT - MARGIN, HEIGHT - MARGIN, MARGIN, fill='gray')
         for i in range(10):
             color = "blue" if i % 3 == 0 else "gray"
 
